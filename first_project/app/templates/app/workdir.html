@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Файлы директории </title>
+</head>
+<body>
+    <p><a href = '{% url "home" %}'> Вернуться к выбору раздела </a></p>
+    <h1>Список файлов в директории:</h1>
+    {% for file in files %}
+        <h2>{{ file }}</h2>
+    {% endfor %}
+</body>
+</html>
